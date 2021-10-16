@@ -5,42 +5,48 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('recipes').insert([
-        {id: 1, 
-          user_id: 1,
+        { 
+          users_id: 1,
           recipe_name: 'Breakfast Hash', 
-          title:'Breakfast Hash',
+          recipe_title: 'Breakfast Hash',
           category_name: 'Breakfast', 
-          source_name:'Austin'},
-        {id: 2, 
-          user_id: 1,
+          source_name: 'Austin'
+        },
+        {
+          users_id: 1,
           recipe_name: 'Baked Chicken', 
-          title:'Chicken Yum',
+          recipe_title: 'Chicken Yum',
           category_name: 'Dinner', 
-          source_name:'Austin'},
-        {id: 3, 
-          user_id: 5,
+          source_name: 'Austin'
+        },
+        {
+          users_id: 5,
           recipe_name: 'Tacos', 
-          title:'Street Tacos',
+          recipe_title: 'Street Tacos',
           category_name: 'Dinner', 
-          source_name:'Grandmother'},
-        {id: 4,
-          user_id: 2,
+          source_name: 'Grandmother'
+        },
+        {
+          users_id: 2,
           recipe_name: 'rowValue1', 
-          title:'',
-          category_name: '', 
-          source_name:''},
-        {id: 5, 
-          user_id: 3,
+          recipe_title:'vvv',
+          category_name: 'vvv', 
+          source_name:'vvv'
+        },
+        {
+          users_id: 3,
           recipe_name: 'rowValue1', 
-          title:'',
-          category_name: '', 
-          source_name:''},
-        {id: 6, 
-          user_id: 4,
+          recipe_title:'vvv',
+          category_name: 'vvv', 
+          source_name:'vvv'
+        },
+        {
+          users_id: 4,
           recipe_name: 'rowValue1', 
-          title:'',
-          category_name: '', 
-          source_name:''}      
+          recipe_title:'vvv',
+          category_name: 'vvv', 
+          source_name:'vvv'
+        }      
       ]);
     });
 };

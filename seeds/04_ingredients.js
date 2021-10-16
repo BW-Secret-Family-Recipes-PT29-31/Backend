@@ -5,36 +5,42 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('ingredients').insert([
-        {id: 1,
+        {
           recipes_id: 1,
           ingredient: 'potatoes',
           ingredient: 'onions',
           ingredient: 'hot peppers',
           ingredient: 'seasonings',
-          ingredient: 'oil'},
-        {id: 2, 
+          ingredient: 'oil'
+        },
+        {
           recipes_id: 2,
           ingredient: 'chicken breast',
           ingredient: 'oil',
           ingredient: 'seasoning mix',
-          ingredient: 'rice'},          
-        {id: 3,
+          ingredient: 'rice'
+        },          
+        {
           recipes_id: 3,
           ingredient: 'steak',
           ingredient: 'corn tortilla',
           ingredient: 'onions',
           ingredient: 'cilantro',
           ingredient: 'oil',
-          ingredient: 'seasonings'},
-        {id: 4,
+          ingredient: 'seasonings'
+        },
+        {
           recipes_id: 4,
-          ingredient:''},
-        {id: 5, 
+          ingredient:'stuff'
+        },
+        {
           recipes_id: 5,
-          ingredient: ''},
-        {id: 6,
+          ingredient: 'things'
+        },
+        {
           recipes_id: 6,
-          ingredient: ''}      
+          ingredient: 'stuff AND things'
+        }      
       ]);
     });
 };

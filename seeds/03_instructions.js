@@ -5,24 +5,30 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('instructions').insert([
-        {id: 1, 
+        { 
           recipes_id: 1,
-          steps: 'google'},
-        {id: 2, 
+          steps: 'google'
+        },
+        {
           recipes_id: 2,
-          steps: 'google'},
-        {id: 3, 
+          steps: 'google'
+        },
+        {
           recipes_id: 3,
-          steps: 'google'},
-        {id: 4, 
+          steps: 'google'
+        },
+        {
           recipes_id: 4,
-          steps: 'google'},
-        {id: 5, 
+          steps: 'google'
+        },
+        {
           recipes_id: 5,
-          steps: 'google'},
-        {id: 6, 
+          steps: 'google'
+        },
+        {
           recipes_id: 6,
-          steps: 'google'}
+          steps: 'google'
+        }
       ]);
     });
 };
