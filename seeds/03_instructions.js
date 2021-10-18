@@ -7,27 +7,27 @@ exports.seed = function(knex) {
       return knex('instructions').insert([
         { 
           recipes_id: 1,
-          steps: 'google'
+          steps: 'google, then follow'
         },
         {
           recipes_id: 2,
-          steps: 'google'
+          steps: 'cookbook, then follow'
         },
         {
           recipes_id: 3,
-          steps: 'google'
+          steps: 'google, then follow'
         },
         {
           recipes_id: 4,
-          steps: 'google'
+          steps: 'cookbook, then follow'
         },
         {
           recipes_id: 5,
-          steps: 'google'
+          steps: 'google, then follow'
         },
         {
           recipes_id: 6,
-          steps: 'google'
+          steps: 'google, then follow'
         }
       ]);
     });
