@@ -6,11 +6,11 @@ function find() {
   return db("recipes").select("id", "title", "source", "category");
 }
 
-function findUserById(id) {
+function findUserById(user_id) {
   return db("users").where({ id }).select("id", "email");
 }
 
-function findById(id) {
+function findById(recipe_id) {
   return db("recipes")
     .where({ id })
     .select("id", "title", "source", "category");
