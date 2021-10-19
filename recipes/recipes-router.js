@@ -1,12 +1,12 @@
 const router = require("express").Router();
 
-const recipes = require("./recipes-model");
+const Recipe = require("./recipes-model");
 //GET ALL RECIPES
-router.get("/", (req, res) => {
-  recipes
+router.get("/api/recipes", (req, res) => {
+  Recipe
     .find()
-    .then((recipe) => {
-      res.status(200).json(recipe);
+    .then((recipes) => {
+      res.status(200).json(recipes);
     })
     .catch((error) => {
       res
@@ -17,14 +17,14 @@ router.get("/", (req, res) => {
 
 //GET RECIPE WITH SPECIFIC ID
 
-router.get("/:id", (req, res) => {
-  const { id } = req.params;
+router.get("api/recipes/recipe_id", (req, res) => {
+  const { id } = req.params.recipe_id;
 
-  recipes
+  Recipe
     .findById(id)
     .then((recipe) => {
       if (recipe) {
-        res.json(recipe);
+        res.json(recipe_id);
       } else {
         res
           .status(404)
