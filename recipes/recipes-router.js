@@ -1,8 +1,7 @@
 const router = require("express").Router();
 
 const recipes = require("./recipes-model");
-
-//GET ALL RECIPES 
+//GET ALL RECIPES
 router.get("/", (req, res) => {
   recipes
     .find()
@@ -17,6 +16,7 @@ router.get("/", (req, res) => {
 });
 
 //GET RECIPE WITH SPECIFIC ID
+
 router.get("/:id", (req, res) => {
   const { id } = req.params;
 
@@ -38,5 +38,4 @@ router.get("/:id", (req, res) => {
     });
 });
 
-
-module.exports = router
+module.exports = router;
