@@ -28,24 +28,24 @@ exports.seed = function(knex) {
         },
         {
           users_id: 2,
-          recipe_name: 'rowValue1', 
-          recipe_title:'vvv',
-          category_name: 'vvv', 
-          source_name:'vvv'
+          recipe_name: 'Spaghetti', 
+          recipe_title:'Basghetti',
+          category_name: 'Dinner', 
+          source_name:'Mother'
         },
         {
           users_id: 3,
-          recipe_name: 'rowValue1', 
-          recipe_title:'vvv',
-          category_name: 'vvv', 
-          source_name:'vvv'
+          recipe_name: 'Goulash', 
+          recipe_title:'Hungarian Goulash',
+          category_name: 'Dinner', 
+          source_name:'Step-Father'
         },
         {
           users_id: 4,
-          recipe_name: 'rowValue1', 
-          recipe_title:'vvv',
-          category_name: 'vvv', 
-          source_name:'vvv'
+          recipe_name: 'Surf and Turf', 
+          recipe_title:'Surf and Turf',
+          category_name: 'Lunch', 
+          source_name:'Father'
         }      
       ]);
     });
