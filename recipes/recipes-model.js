@@ -6,13 +6,13 @@ function find() {
   return db("recipes").select("id", "title", "source", "category");
 }
 
-function findUserById(user_id) {
-  return db("users").where({ id }).select("id", "email");
+function findUserById(users_id) {
+  return db("users").where({ users_id }).select("id", "username");
 }
 
-function findById(recipe_id) {
+function findById(recipes_id) {
   return db("recipes")
-    .where({ id })
+    .where({ recipes_id })
     .select("id", "title", "source", "category");
 }
 
@@ -26,7 +26,8 @@ function findIngredients(id) {
 function findInstructions(id) {
   return db("instructions as i")
     .join("recipes as r", "r.id", "=", "in.recipe_id")
-    .select("r.title", "i.step_number", "i.instructions", "i.id");
+    .select("r.title", "i.steps", "i.instructions", "i.id")
+    .where({ recipe_id: id})
 }
 
 //ADD
